@@ -1,0 +1,101 @@
+/*
+Theme Name: Satner Pro
+Version: 1.0
+Author: abs
+Description: this is portfolio corporate website.
+Tags: html, css, portfolio
+*/
+
+
+/* primary menu css */
+header ul {}
+header ul li{
+  margin-right: 45px;
+}
+header ul a{
+  font: 500 14px/100px "Rubik", sans-serif;
+text-transform: uppercase;
+color: #000000;
+padding: 0px;
+display: inline-block;
+}
+
+header ul li{
+  position: relative; }
+  header .sub-menu {
+    border: none;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 0px;
+    background: #fff; }
+    @media (min-width: 992px) {
+      header .sub-menu {
+        position: absolute;
+        top: 120%;
+        left: 0px;
+        min-width: 200px;
+        text-align: left;
+        opacity: 0;
+        transition: all 300ms ease-in;
+        visibility: hidden;
+        display: block;
+        border: none;
+        padding: 0px;
+        border-radius: 0px;
+        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); } }
+    header .sub-menu:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: #eeeeee transparent transparent transparent;
+      position: absolute;
+      right: 24px;
+      top: 45px;
+      z-index: 3;
+      opacity: 0;
+      transition: all 400ms linear; }
+  header .sub-menu li {
+      display: block;
+      float: none;
+      margin-right: 0px;
+      border-bottom: 1px solid #ededed;
+      margin-left: 0px;
+      transition: all 0.4s linear; }
+    header .sub-menu a {
+        line-height: 45px;
+        color: #000000;
+        padding: 0px 30px;
+        transition: all 150ms linear;
+        display: block;
+        text-transform: capitalize;
+        margin-right: 0px; }
+      header .sub-menu li:last-child {
+        border-bottom: none; }
+      header .sub-menu li:hover a {
+        color: #fff; }
+  @media (min-width: 992px) {
+    header li:hover ul {
+      visibility: visible;
+      opacity: 1;
+      top: 100%; } }
+  header li:hover ul li {
+    margin-top: 0px; }
+header .sub-menu li:last-child {
+  margin-right: 0px; }
+
+header .sub-menu .nav-link {
+      line-height: 45px;
+      color: #000000;
+      padding: 0px 30px;
+      transition: all 150ms linear;
+      display: block;
+      text-transform: capitalize;
+      margin-right: 0px;
+  }
+header .sub-menu a:hover{
+  color: #fff;
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+}
