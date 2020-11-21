@@ -286,6 +286,9 @@ add_action('init','satner_review');
 // require
 require_once('cmb2/init.php');
 require_once('cmb2/function.php');
+// theme options
+require_once('theme-options/redux-core/framework.php');
+require_once('theme-options/sample/sample.php');
 
 
 
