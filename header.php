@@ -1,6 +1,8 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
-
+<?php
+global $redux_demo;
+?>
 <head>
 	<!-- Required meta tags -->
 	<meta charset="<?php bloginfo('charset')?>">

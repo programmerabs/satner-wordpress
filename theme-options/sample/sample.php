@@ -325,6 +325,123 @@ Redux::set_section($opt_name,[
 	'icon'   										=> 'el el-home',
 ]);
 Redux::set_section($opt_name,[
+	'title' 										=>	'Homepage Setting',
+	'id' 												=>	'hpsettings',
+	'icon' 											=>	'el el-home'
+
+]);
+
+// Redux::set_section($opt_name,[
+// 	'title'											=>	esc_html__('SHow Hide Section','satlang'),
+// 	'id'												=>	'showhideopt',
+// 	'subsection'								=>	true,
+// 	'fields'										=>[[
+//
+// 				'id'										=>	'tgbanner',
+// 				'type'									=>	'select',
+// 				'title'									=>	'Show or hide your banner section',
+// 				'options'								=>	[
+// 					'on'									=>	'Show',
+// 					'off'									=>	'hide'
+// 				],
+// 				'default'								=>	'on'
+// 	],
+// 	[
+//
+// 				'id'										=>	'tgabout',
+// 				'type'									=>	'select',
+// 				'title'									=>	'Show or hide your about section',
+// 				'options'								=>	[
+// 					'on'									=>	'Show',
+// 					'off'									=>	'hide'
+// 				],
+// 				'default'								=>	'on'
+// 	],
+// 	[
+//
+// 				'id'										=>	'tgbrand',
+// 				'type'									=>	'select',
+// 				'title'									=>	'Show or hide your Brand section',
+// 				'options'								=>	[
+// 					'on'									=>	'Show',
+// 					'off'									=>	'hide'
+// 				],
+// 				'default'								=>	'on'
+// 	],
+// 	[
+//
+// 				'id'										=>	'tgfeature',
+// 				'type'									=>	'select',
+// 				'title'									=>	'Show or hide your Feature section',
+// 				'options'								=>	[
+// 					'on'									=>	'Show',
+// 					'off'									=>	'hide'
+// 				],
+// 				'default'								=>	'on'
+// 	],
+// 	[
+//
+// 				'id'										=>	'tgportfolio',
+// 				'type'									=>	'select',
+// 				'title'									=>	'Show or hide your Portfolio section',
+// 				'options'								=>	[
+// 					'on'									=>	'Show',
+// 					'off'									=>	'hide'
+// 				],
+// 				'default'								=>	'on'
+// 	],
+// 	[
+//
+// 				'id'										=>	'tgtestmonial',
+// 				'type'									=>	'select',
+// 				'title'									=>	'Show or hide your Testmonial section',
+// 				'options'								=>	[
+// 					'on'									=>	'Show',
+// 					'off'									=>	'hide'
+// 				],
+// 				'default'								=>	'on'
+// 	],
+// 	[
+//
+// 				'id'										=>	'tgnewsletter',
+// 				'type'									=>	'select',
+// 				'title'									=>	'Show or hide your Newsletter section',
+// 				'options'								=>	[
+// 					'on'									=>	'Show',
+// 					'off'									=>	'hide'
+// 				],
+// 				'default'								=>	'on'
+// 	]
+// ]
+// ]);
+ Redux::set_section($opt_name,[
+	'title'											=>	esc_html__('Homepage Control','satlang'),
+	'id'												=>	'cnthomepg',
+	'subsection'								=>	true,
+	'fields'										=>[[
+				'id'										=>	'tgtoggle',
+				'type'									=>	'sorter',
+				'title'									=>	'Show or hide your banner section',
+				'options'								=>	[
+					 'enabled'						=>	[
+						 'banner'						=>	'banner',
+						 'about'						=>	'about',
+						 'brand'						=>	'brand',
+						 'feature'						=>	'feature',
+						 'portfolio'						=>	'portfolio',
+							'testmonial'						=>	'testmonial'
+
+
+
+					 ],
+					 'disabled'						=>	[
+						 	'newsletter'						=>	'newsletter'
+					 ]
+				]
+	]
+]
+]);
+Redux::set_section($opt_name,[
 	'title'											=>	esc_html__('Footer Options','satlang'),
 	'id'												=>	'footer',
 	'icon'   										=> 'el el-home',
